@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Syncfusion.Blazor.Core" Version="24.1.41" />
+    <PackageReference Include="Syncfusion.Blazor.Grid" Version="24.1.41" />
     <PackageReference Include="Syncfusion.Blazor.Navigations" Version="24.1.41" />
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="24.1.41" />
   </ItemGroup>

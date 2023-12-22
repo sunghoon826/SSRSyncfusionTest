@@ -1,5 +1,5 @@
 using SSRSyncfusionTest.Components;
-using Syncfusion.Blazor;
+using Syncfusion.Blazor; // 싱크퓨전 추가
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,9 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddSyncfusionBlazor();
+builder.Services.AddSyncfusionBlazor(); // 싱크퓨전 서비스 추가
 
 var app = builder.Build();
+
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2UVhhQlVFfV5dX2NWfFN0QXNRdVp0flRFcDwsT3RfQF5iS3xRdkRjX3xbcHBdRg=="); //라이센스 추가
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
